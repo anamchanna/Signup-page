@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html body {
+    height: 100%;
+}
+
+body {
+    background: #00416A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f1f2f6, #c7cee0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f1f2f6, #c7cee0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.inner-container {
+    background-color: #ffffff;
+    height: auto;
+    border-radius: 2.25rem;
+    display: flex;
+    max-width: 90%;
+    width: 90%;
+}
+
+.left-section {
+    flex-basis: 100%;
+}
+
+.social-media {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.social-media img {
+    width: 15px;
+    vertical-align: bottom;
+    margin-right: 7px;
+}
+
+.signup-form {
+    height: 100%;
+    width: 100%;
+    padding: 2.3rem 4.5rem;
+}
+
+.w-13 {
+    width: 13px !important;
+}
+
+.title {
+    color: #271663;
+    font-size: 37px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-title-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sub-title {
+    color: #fb4c53;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+}
+
+.hr {
+    background-color: #fb4c53;
+    width: 33px;
+    height: 2px;
+    margin-right: 1.5rem;
+}
+
+.btn {
+    background-color: #ffffff;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #e4e8f3;
+    border-radius: 0.45rem;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 12px;
+    flex: 1 1 45%;
+    margin-right: 15px;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+.signup-btn {
+    color: #ffffff;
+    background-color: #fb4c53;
+    padding: 0.7rem;
+    border: none;
+    font-size: 18px;
+    border-radius: 1.2rem;
+    width: 52px;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    opacity: 1;
+}
+
+.fields-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+.agreement-check {
+    display: flex;
+}
+
+.agreement-check input {
+    margin-right: 15px;
+}
+
+.agreement-check label {
+    width: 300px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-right: 15px;
+}
+
+.input-field:last-child {
+    margin-right: 0;
+}
+
+.input-field.w-100 {
+    flex: 1;
+}
+
+.input {
+    border: 1px solid #e4e8f3;
+    padding: 10.4px 12px;
+    border-radius: 0.45rem;
+    outline: 0;
+    background-color: #fafbff;
+}
+
+.color-red {
+    color: #fb4c53
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 100%
+}
+
+
+/* Media Queries for Responsive Layout */
+
+
+/* For exact screen size - Galaxy-Fold*/
+
+@media(min-width: 280px) and (max-width: 280px) {
+    .input {
+        width: 219px;
+    }
+    .social-media {
+        flex-direction: column;
+    }
+    .social-media .btn {
+        width: 222px;
+    }
+    .social-media .btn:first-child {
+        margin-bottom: 1rem;
+    }
+    .agreement-check label {
+        width: 219px;
+    }
+    .signup-form {
+        padding: 0.7rem;
+    }
+    .inner-container {
+        border-radius: 0px;
+    }
+}
+
+
+/* For exact screen size - Iphone 5*/
+
+@media(min-width: 320px) and (max-width: 320px) {
+    .input {
+        width: 262px;
+    }
+    .social-media {
+        flex-direction: column;
+    }
+    .social-media .btn {
+        width: 260px;
+    }
+    .social-media .btn:first-child {
+        margin-bottom: 1rem;
+    }
+    .agreement-check label {
+        width: 235px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        background-color: #ffffff;
+    }
+    .inner-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .signup-form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 557px) {
+    .input-field {
+        margin-right: 0px;
+    }
+    .fields-row .input-field:first-child {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 580px) {
+    .signup-form {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .right-section {
+        flex-basis: 50%;
+        background-color: #fb4c53;
+        border-radius: 0 2.25rem 2.25rem 0;
+        background-image: url("./images/bg.jpg");
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .left-section {
+        flex-basis: 50%;
+    }
+}
